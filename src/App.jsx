@@ -1,33 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect } from 'react'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import Lenis from 'lenis'
+import Marque from './Components/Marque'
+import Infosection from './Components/Infosection'
+import About from './Components/About'
+import Marques from './Components/Marques'
+import Services from './Components/Services'
+import Cursour from './Components/Cursour'
+import Projects from './Components/Projects'
+import Testiomonials from './Components/Testiomonials'
+import Contact from './Components/Contact'
+import Frequentlyque from './Components/Frequentlyque'
+import Footer from './Components/Footer'
+import Magnito from './Components/Magnito'
+import BorderAnim from './Components/BorderAnim'
+import Loader from './Components/Loader'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+
+
+const App = () => {
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+        document.body.style.overflow = 'unset';
+    };
+}, []);
+
+
+  function lenisFn() {
+    const lenis = new Lenis({
+      wheelMultiplier: 2,
+      duration: 1.5,
+      easing: (x) => 1 - Math.pow(1 - x, 5),
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+  lenisFn();
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="w-full min-h-screen bg-[#1A1A1A] text-white">
+        <Loader/>
+        <Cursour/>
+        {/* <Navbar /> */}
+        <Hero/>
+        <Marque/>
+        <Infosection/>
+        <About/>
+        <Marques/>
+        <Services />
+        <Projects/>
+        <Testiomonials/>
+        <Contact/>
+        <Frequentlyque/>
+        <Footer/>
+        {/* <Magnito/> */}
+        {/* <BorderAnim/> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
