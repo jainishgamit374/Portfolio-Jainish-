@@ -22,14 +22,6 @@ import Loader from './Components/Loader'
 
 const App = () => {
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => {
-        document.body.style.overflow = 'unset';
-    };
-}, []);
-
 
   function lenisFn() {
     const lenis = new Lenis({
@@ -47,21 +39,20 @@ const App = () => {
 
   return (
     <>
-      <div className="w-full min-h-screen bg-[#1A1A1A] text-white">
-        <Loader/>
-        <Cursour/>
-        {/* <Navbar /> */}
-        <Hero/>
-        <Marque/>
-        <Infosection/>
-        <About/>
-        <Marques/>
+      <div className="main w-full min-h-screen bg-[#1A1A1A] text-white">
+        <Loader />
+        <Cursour />
+        <Hero />
+        <Marque />
+        <Infosection />
+        <About />
+        <Marques />
         <Services />
-        <Projects/>
-        <Testiomonials/>
-        <Contact/>
-        <Frequentlyque/>
-        <Footer/>
+        <Projects />
+        <Testiomonials />
+        <Contact />
+        <Frequentlyque />
+        <Footer />
         {/* <Magnito/> */}
         {/* <BorderAnim/> */}
       </div>

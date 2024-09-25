@@ -52,21 +52,6 @@ const Infosection = () => {
           <h1 className="text-[10vw] h-[5vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
             <span className="block revel">creative magic</span>
           </h1>
-
-          {/* 
-          <h1
-            ref={textRef}
-            className="text-[10vw] leading-none font-semibold uppercase">
-            Elevate your <br />
-            Brand
-            <span className="p-4">
-              <i className="ri-arrow-right-up-line text-[8vw] border-2 rounded-full text-[#D6CC53] "></i>
-            </span>
-            with my
-             <br /> creative magic
-          </h1> */}
-
-
         </div>
       </div>
     </>

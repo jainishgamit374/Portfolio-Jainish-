@@ -12,45 +12,70 @@ const Marques = () => {
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Development
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8  rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Designing
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8  rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Seo
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8  rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Ui/Ux
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8  rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Branding
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8  rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+                                    </div>
                                 </div>
                                 <div className="marque-items-cont marque-items flex items-center gap-20">
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Development
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8 rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Designing
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8 rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Seo
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8 rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Ui/Ux
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8 rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+
+                                    </div>
                                     <h1 className="text-5xl font-semibold uppercase">
                                         Branding
                                     </h1>
-                                    <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i>
+                                    <div className="circle size-8 rounded-full">
+                                        <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,4 +87,3 @@ const Marques = () => {
 }
 
 export default Marques
-{/* <i className="ri-arrow-right-line text-xl font-semibold border-2 p-4 px-5 border-black rounded-full"></i> */ }

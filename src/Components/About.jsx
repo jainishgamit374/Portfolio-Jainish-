@@ -5,7 +5,6 @@ import gsap, { Elastic } from 'gsap'
 import { useGSAP } from "@gsap/react";
 
 
-// import git from "../assets/TechStack/github.svg";
 
 const About = () => {
 
@@ -116,7 +115,6 @@ const About = () => {
                         </div>
                         <div className="col-span-2 bg-[#232323] rounded-3xl p-10 flex items-center justify-center faq-bga">
                             <div className="profile-cont size-44 rounded-full bg-zinc-700 overflow-hidden drop-shadow-2xl shadow-gray-50 flex items-center justify-center">
-                                {/* <img className='profile w-3/4 h-3/4 bg-zinc-100 object-cover rounded-full' src={profile} alt="Profil-Image" /> */}
                                 <img className='profile w-[80%] h-[80%] bg-zinc-200 object-cover rounded-full' src={profile} alt="Profil-Image" />
                             </div>
                         </div>
@@ -125,7 +123,7 @@ const About = () => {
                         <div className="bg-[#232323] rounded-3xl faq-bga">
                             <div className="project-container w-full h-full flex flex-col items-center justify-center">
                                 <h1 className='text-[6vw]'>20+</h1>
-                                <h2 className='text-[1.8vw] leading-none'>Compleat <br /> Project</h2>
+                                <h2 className='text-[1.8vw] leading-none'>Complete <br /> Project</h2>
                             </div>
                         </div>
                         <div className="bg-[#232323] rounded-3xl faq-bga">
@@ -146,14 +144,14 @@ const About = () => {
                         <div className="col-span-2 rounded-3xl bg-[#232323] faq-bga">
                             <div className="project-container w-full h-full px-10 flex flex-col items-center gap-8 overflow-hidden">
                                 <h1 className="py-2">My Tech Stack</h1>
-                                <div className="relative w-full h-1/2 flex gap-20 flex-shrink-0 items-center px-4 py-7 overflow-hidden">
+                                <div className="relative w-full h-1/2 flex gap-10 flex-shrink-0 items-center px-4 py-7 overflow-hidden">
                                     <motion.div
                                         initial={{ x: "0" }}
                                         animate={{ x: "-100%" }}
-                                        transition={{ duration: 30, ease: "linear", repeat: Infinity }}
-                                        className="techstack-container flex gap-16">
+                                        transition={{ duration: 15, ease: "linear", repeat: Infinity }}
+                                        className="techstack-container flex gap-10">
                                         <div className="w-16 h-16 bg-white p-3 rounded-full">
-                                            <img className="w-full h-full ml-2" src={TechHtml} />
+                                            <img className="w-full h-full ml-[.5vw]" src={TechHtml} />
                                         </div>
                                         <div className="w-16 h-16 bg-white p-3 rounded-full">
                                             <img className="w-full h-full" src={TechCss} />
@@ -183,10 +181,10 @@ const About = () => {
                                     <motion.div
                                         initial={{ x: "0" }}
                                         animate={{ x: "-100%" }}
-                                        transition={{ duration: 30, ease: "linear", repeat: Infinity }}
-                                        className="techstack-container flex gap-16">
+                                        transition={{ duration: 15, ease: "linear", repeat: Infinity }}
+                                        className="techstack-container flex gap-10">
                                         <div className="w-16 h-16 bg-white p-3 rounded-full">
-                                            <img className="w-full h-full ml-2" src={TechHtml} />
+                                            <img className="w-full h-full ml-[.5vw]" src={TechHtml} />
                                         </div>
                                         <div className="w-16 h-16 bg-white p-3 rounded-full">
                                             <img className="w-full h-full" src={TechCss} />

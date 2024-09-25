@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
-import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import { easeInOut } from 'framer-motion';
 
 
@@ -106,7 +105,6 @@ const Contact = () => {
                                             placeholder="Write your project">
                                         </textarea>
                                     </div>
-
                                     <motion.button
                                         whileHover={{ scale: 1.1 }}
                                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -115,19 +113,13 @@ const Contact = () => {
                                         className="primary-btn w-34 h-14 px-5 py-6 mt-[5vw] bg-white hover:bg-gray-100 text-black flex flex-col items-center justify-center overflow-hidden rounded-full">
                                         <motion.div
                                             transition={{ ease: easeInOut }}
-                                            className="flex w-full items-center justify-between gap-8">
-                                            <span className="text-lg uppercase ">Send Message</span>
+                                            className="flex w-full items-center justify-center gap-5 ">
+                                            <span className="text-lg uppercase">Send Message</span>
                                             <motion.div
-                                                transition={
-                                                    {
-                                                        ease: "linear",
-                                                        duration: 0.5,
-                                                        x: { duration: 1 }
-                                                    }
-                                                }
+                                                className="p-1"
+                                                animate={isHovered ? { x: "50%", rotate: "-45deg" } : { x: "0" }}
                                             >
-
-                                                <MdOutlineSubdirectoryArrowRight size={"1em"} />
+                                                <i className="ri-arrow-right-line text-xl font-semibold"></i>
                                             </motion.div>
                                         </motion.div>
                                     </motion.button>

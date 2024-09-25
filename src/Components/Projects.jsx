@@ -60,18 +60,23 @@ const Projects = () => {
                                                 onMouseLeave={() => setIsHovered(false)}
                                                 className="primary-btn"
                                             >
-                                                <motion.div
+
+                                                <motion.a
                                                     transition={{ ease: easeInOut }}
                                                     href={item.url}
-                                                    className="flex items-center gap-10 bg-zinc-200 hover:bg-zinc-50 p-1 px-5 text-zinc-800 font-semibold rounded-full">
-                                                    <span className="text-xl uppercase font-semibold"> Live </span>
+                                                    target="_blank"           
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-10 bg-zinc-200 hover:bg-zinc-50 p-1 px-5 text-zinc-800 font-semibold rounded-full"
+                                                >
+                                                    <span className="text-xl uppercase font-semibold">Live</span>
                                                     <motion.div
                                                         className="p-1"
                                                         animate={isHovered === item.id ? { x: "40%" } : { x: "0" }}
                                                     >
                                                         <i className="ri-arrow-right-line text-xl font-semibold"></i>
                                                     </motion.div>
-                                                </motion.div>
+                                                </motion.a>
+
                                             </motion.button>
                                         </div>
                                     </div>
