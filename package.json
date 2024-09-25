@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.112.0",
+    "@studio-freight/lenis": "^1.0.42",
     "animejs": "^3.2.2",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.4",

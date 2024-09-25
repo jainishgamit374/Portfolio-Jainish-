@@ -28,7 +28,7 @@ const Frequentlyque = () => {
     {
       id: "5",
       headtext: "What is the process for a project?",
-      info: `My process involves: 1. Ideation 2. Mood board 3. Wireframe 4. Design 5. Development`,
+      info: `My process involves:<br/>1. Ideation<br/>2. Mood board<br/>3. Wireframe<br/>4. Design<br/>5. Development`,
     },
   ];
 
@@ -78,7 +78,7 @@ const Frequentlyque = () => {
                       exit={{ opacity: 0, top: "0%" }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <p className="text-[1.1vw] leading-tight">{item.info}</p>
+                      <p className="text-[1.1vw] leading-tight" dangerouslySetInnerHTML={{__html: item.info}}></p>
                     </motion.div>
                   )}
                 </AnimatePresence>

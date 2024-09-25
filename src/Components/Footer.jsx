@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
 
@@ -57,11 +58,27 @@ const Footer = () => {
                         <h1 className='footertext text-5xl font-["Oxta]'>JG</h1>
                     </div>
 
-                    <div className="w-full h-[8vh] flex items-center justify-center gap-20 ">
-                        <i className='ri-instagram-line text-4xl'></i>
-                        <i className='ri-linkedin-box-fill text-4xl'></i>
-                        <i className='ri-github-fill text-4xl'></i>
-                        <i className="ri-twitter-x-line text-4xl"></i>
+                    <div className="w-full h-[8vh] flex items-center justify-center gap-14">
+                        <motion.i
+                            className='ri-instagram-line text-4xl cursor-pointer'
+                            whileHover={{ scale: 1.2, y: -2 }}
+                            transition={{ type: "spring", stiffness: 500 }}
+                        ></motion.i>
+                        <motion.i
+                            className='ri-linkedin-box-fill text-4xl cursor-pointer'
+                            whileHover={{ scale: 1.2, y: -2 }}
+                            transition={{ type: "spring", stiffness: 500 }}
+                        ></motion.i>
+                        <motion.i
+                            className='ri-github-fill text-4xl cursor-pointer'
+                            whileHover={{ scale: 1.2, y: -2 }}
+                            transition={{ type: "spring", stiffness: 500 }}
+                        ></motion.i>
+                        <motion.i
+                            className='ri-twitter-fill text-4xl cursor-pointer'
+                            whileHover={{ scale: 1.2, y: -2 }}
+                            transition={{ type: "spring", stiffness: 500 }}
+                        ></motion.i>
                     </div>
                     <div className="w-full py-4 flex items-center justify-center">
                         <p>All Rights Reserved. @ copyright Jainish Gamit 2024</p>

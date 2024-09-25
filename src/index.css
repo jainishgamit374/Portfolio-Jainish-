@@ -176,7 +176,7 @@ body {
 }
 
 .service-linksbefore {
-  animation: right-to-left 20s linear infinite;
+  animation: right-to-left 10s linear infinite;
 }
 
 @keyframes right-to-left {
