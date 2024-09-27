@@ -13,38 +13,25 @@ import Contact from './Components/Contact'
 import Frequentlyque from './Components/Frequentlyque'
 import Footer from './Components/Footer'
 import Loader from './Components/Loader'
-import Magnito from './Components/Magnito'
-import BorderAnim from './Components/BorderAnim'
 
 
 
 
 const App = () => {
 
-
-  useEffect(() => {
+  function lenisFn() {
     const lenis = new Lenis({
-      wheelMultiplier: 1,
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      direction: 'vertical',
-      gestureDirection: 'vertical',
-      smooth: true,
-      smoothTouch: false,
-      touchMultiplier: 2,
-    })
-
+      wheelMultiplier: 2,
+      duration: 1.5,
+      easing: (x) => 1 - Math.pow(1 - x, 5),
+    });
     function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
-
-    requestAnimationFrame(raf)
-
-    return () => {
-      lenis.destroy()
-    }
-  }, [])
+    requestAnimationFrame(raf);
+  }
+  lenisFn();
 
   return (
     <>
@@ -62,8 +49,6 @@ const App = () => {
         <Contact />
         <Frequentlyque />
         <Footer />
-        {/* <Magnito/> */}
-        {/* <BorderAnim/> */}
       </div>
     </>
   )
