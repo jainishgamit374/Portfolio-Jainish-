@@ -38,22 +38,22 @@ const Contact = () => {
         <>
             <div className="relative w-full text-center py-10 overflow-hidden" id='contact'>
                 <div className="heading max-w-screen-xl mx-auto flex items-center justify-between pb-12 px-4">
-                    <h1 className="text-6xl uppercase font-semibold tracking-tight">
+                    <h1 className="text-3xl md:text-6xl lg:text-6xl uppercase font-semibold tracking-tight">
                         Contact Us
                     </h1>
                     <div className="w-1/3 h-1 bg-white"></div>
                 </div>
                 <div className="Contact-wrapper max-w-screen-xl  mx-auto py-4 px-4 flex items-center justify-center">
-                    <div className="Contact-container w-full h-full flex justify-between">
-                        <div className="left-contact w-[45%] h-full">
+                    <div className="Contact-container w-full h-full flex flex-col-reverse items-start md:flex-col-reverse lg:flex-row justify-between gap-20">
+                        <div className="left-contact w-[100%] md:w-[100%] lg:w-[45%] h-full">
                             <div className="contact-head py-5">
                                 <h1 className='text-2xl font-bold'>Talk To Me</h1>
                             </div>
-                            <div className="contact-cards w-full  flex flex-col items-center gap-5  justify-center">
+                            <div className="contact-cards w-full flex flex-col md:flex-row lg:flex-col items-center justify-center gap-5 px-1 md:px-5 lg:px-10 md:py-5 lg:py-10">
                                 {cont.map((item) => (
                                     <motion.div
                                         key={item.id}
-                                        className="contact-card w-[55%] h-[28vh] bg-white text-black p-6 rounded-xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
+                                        className="contact-card w-[90%] bg-white text-black p-6 lg:p-[1.2vw] rounded-xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >
@@ -73,14 +73,14 @@ const Contact = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="right-contact w-[45%] h-full">
-                            <div className="contact-head py-5">
+                        <div className="right-contact w-[100%]  md:w-[100%] lg:w-[45%] h-full">
+                            <div className="contact-head py-8 md:py-5 lg:py-5">
                                 <h1 className='text-xl'>Write Me Your Project</h1>
                             </div>
-                            <div className="contact-cards w-full flex flex-col items-center gap-5 px-10 justify-center">
-                                <form className='contact-from w-full'>
+                            <div className="contact-cards w-full flex flex-col items-center gap-5 justify-center px-1 md:px-10 lg:px-10 md:py-5 lg:py-10">
+                                <form className='contact-from w-full px-5'>
                                     <div className="contact_-form-div relative mb-[2rem] h-[5rem]">
-                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Name</label>
+                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[4vw] md:text-[1.8vw] lg:text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Name</label>
                                         <input
                                             type="text"
                                             name="name"
@@ -88,7 +88,7 @@ const Contact = () => {
                                             placeholder="Enter your name" />
                                     </div>
                                     <div className="contact_-form-div relative mb-[2rem] h-[5rem]">
-                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Email</label>
+                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[4vw] md:text-[1.8vw] lg:text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Email</label>
                                         <input
                                             type="email"
                                             name="email"
@@ -96,7 +96,7 @@ const Contact = () => {
                                             placeholder="user@gmail.com" />
                                     </div>
                                     <div className="contact-form-div relative mb-[2rem] h-[14rem]">
-                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Project</label>
+                                        <label className="contact-form-tag absolute -top-[0.75rem] left-[1.2rem] text-[4vw] md:text-[1.8vw] lg:text-[1.2vw] z-[2] bg-[#1A1A1A] px-2 rounded-full">Project</label>
                                         <textarea
                                             name="project"
                                             cols="30"

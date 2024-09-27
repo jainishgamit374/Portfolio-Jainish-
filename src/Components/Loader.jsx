@@ -1,5 +1,5 @@
 import { easeInOut, motion, MotionConfig } from 'framer-motion'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import gsap, { Power2 } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -13,16 +13,6 @@ const Loader = () => {
         setBtnClick(true);
         setIsLoading(false);
     }
-
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-
-        return () => {
-            if (!isLoading && btnClick) {
-                document.body.style.overflow = 'unset';
-            }
-        };
-    }, [isLoading, btnClick]);
 
     const t1 = gsap.timeline();
     useGSAP(() => {
@@ -98,7 +88,7 @@ const Loader = () => {
                             transform: { ease: Power2.easeOut }
                         }
                     }}
-                    className="w-full h-screen bg-[#333] fixed bottom-0 left-[50%] -translate-x-[50%] z-50 snap-always">
+                    className="w-full h-screen bg-[#333] fixed bottom-0 left-[50%] -translate-x-[50%] z-50 snap-always loadered">
                     <div className="relative flex w-full h-full max-w-screen-xl mx-auto text-center">
                         <MotionConfig>
                             <div className="w-[50vw] h-[70vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -107,7 +97,7 @@ const Loader = () => {
                                         <svg width="225" height="225" viewBox="0 0 124 124">
                                             <circle
                                                 style={{ rotate: "-90deg", transformOrigin: "center", strokeDasharray: "380", strokeDashoffset: "380" }}
-                                                className="circle" cx="62" cy="62" r="59" fill="none" stroke="#ffff" strokeWidth="1px"  />
+                                                className="circle" cx="62" cy="62" r="59" fill="none" stroke="#ffff" strokeWidth="1px" />
                                         </svg>
                                         <div className="loader-prog absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
                                             <h1 ref={loaderRef} className='text-white text-[2vw] opacity-0'>0%</h1>

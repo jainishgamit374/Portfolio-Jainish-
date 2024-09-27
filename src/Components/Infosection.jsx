@@ -34,13 +34,13 @@ const Infosection = () => {
 
   return (
     <>
-      <div className="triggerTextFill w-full h-screen mx-auto text-center py-14 overflow-hidden">
+      <div className="triggerTextFill w-full h-[50vh] md:h-[80vh] lg:h-screen  mx-auto text-center py-14 overflow-hidden">
         <div className="inf-cont  relative w-full h-full flex items-center flex-col justify-center">
 
-          <h1 className="text-[10vw] h-[5vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
+          <h1 className="text-[10vw] h-[5vh] md:h-[8vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
             <span className="block revel">Elevate you</span>
           </h1>
-          <h1 className="text-[10vw] h-[5vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
+          <h1 className="text-[10vw] h-[5vh] md:h-[8vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
             <span className="block revel">
               <span>Brand</span>
               <span className="p-4">
@@ -49,7 +49,7 @@ const Infosection = () => {
               <span>with my</span>
             </span>
           </h1>
-          <h1 className="text-[10vw] h-[5vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
+          <h1 className="text-[10vw] h-[5vh] md:h-[8vh] lg:h-[20vh] leading-none font-semibold uppercase overflow-hidden">
             <span className="block revel">creative magic</span>
           </h1>
         </div>

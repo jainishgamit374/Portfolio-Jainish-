@@ -45,11 +45,11 @@ const Footer = () => {
     return (
         <>
             <div className="relative w-full  py-10 pb-0 overflow-hidden bg-zinc-50">
-                <div className="heading max-w-screen-xl h-[60vh] mx-auto flex items-center justify-between flex-col  px-4 text-black">
+                <div className="heading max-w-screen-xl h-auto mx-auto flex items-center justify-between flex-col gap-5 px-1 md:px-4 lg:px-4  text-black">
                     <div className="footer-links w-full flex items-center flex-row justify-center py-1">
                         {navLinks.map((item, i) => (
-                            <div key={i} className="w-[14%] h-[10vh] flex items-center justify-center ">
-                                <a className='cursor-pointer links' href={item.id}>{item.link}</a>
+                            <div key={i} className="w-[100%] md:w-[40%] lg:w-[14%] h-[10vh] flex items-center justify-center p-4">
+                                <a className='cursor-pointer links text-sm md:text-xl lg:text-xl ' href={item.id}>{item.link}</a>
                             </div>
                         ))}
                     </div>
@@ -81,7 +81,7 @@ const Footer = () => {
                         ></motion.i>
                     </div>
                     <div className="w-full py-4 flex items-center justify-center">
-                        <p>All Rights Reserved. @ copyright Jainish Gamit 2024</p>
+                        <p className='text-sm md:text-xl lg:text-xl'>All Rights Reserved. @ copyright Jainish Gamit 2024</p>
                     </div>
 
                 </div>

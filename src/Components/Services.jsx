@@ -9,24 +9,23 @@ const Services = () => {
 
   return (
     <>
-      <div className="relative w-full text-center py-14 overflow-hidden" id="#services">
+      <div className="relative w-full h-[70vh] md:h-[65vh] lg:h-fit  text-center py-14 overflow-hidden" id="#services">
         <div className="heading max-w-screen-xl mx-auto flex items-center justify-between pb-12 px-4">
-          <h1 className="text-6xl uppercase font-semibold tracking-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-6xl uppercase font-semibold tracking-tight">
             Services
           </h1>
           <div className="w-1/3 h-1 bg-white"></div>
         </div>
         <div className="service-wrapper max-w-screen-xl mx-auto  py-9 px-4 flex items-center flex-col justify-center ">
-       
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[3vw] text-white uppercase font-semibold mix-blend-difference">web development</h1>
+              <h1 className="text-[3.8vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">web development</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
               {wd.map((item, index) => (
                 <div key={index} className="marquee-item">
-                  <h1 className="text-[2.5vw] capitilize w-[24vw]">{item}</h1>
+                  <h1 className="text-[2.8vw] capitilize w-[30vw] md:w-[25vw] lg:w-[28vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}
@@ -35,13 +34,13 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[3vw] text-white uppercase font-semibold mix-blend-difference">ui/ux Designe</h1>
+              <h1 className="text-[3.8vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">ui/ux Designe</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
               {ud.map((item, index) => (
                 <div key={index} className="marquee-item">
-                  <h1 className="text-[2.5vw] capitilize w-[20vw]">{item}</h1>
+                  <h1 className="text-[2.8vw] capitilize w-[20vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}
@@ -50,13 +49,13 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[3vw] text-white uppercase font-semibold mix-blend-difference">consulting & Tranning</h1>
+              <h1 className="text-[3.8vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">consulting & Tranning</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
               {ct.map((item, index) => (
                 <div key={index} className="marquee-item">
-                  <h1 className="text-[2.5vw] capitilize w-[25vw]">{item}</h1>
+                  <h1 className="text-[2.8vw] capitilize w-[30vw] md:w-[25vw] lg:w-[28vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}
@@ -65,13 +64,13 @@ const Services = () => {
   
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[3vw] text-white uppercase font-semibold mix-blend-difference">Product Designer</h1>
+              <h1 className="text-[3.8vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Product Designer</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
               {pd.map((item, index) => (
                 <div key={index} className="marquee-item">
-                  <h1 className="text-[2.5vw] capitilize w-[24vw]">{item}</h1>
+                  <h1 className="text-[2.8vw] capitilize w-[24vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}
@@ -80,13 +79,13 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[3vw] text-white uppercase font-semibold mix-blend-difference">Seo</h1>
+              <h1 className="text-[3.8vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Seo</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
               {so.map((item, index) => (
                 <div key={index} className="marquee-item">
-                  <h1 className="text-[2.5vw] capitilize w-[10vw] uppercase">{item}</h1>
+                  <h1 className="text-[2.8vw] capitilize w-[10vw] uppercase">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}

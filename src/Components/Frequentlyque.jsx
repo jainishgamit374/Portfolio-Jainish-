@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Frequentlyque = () => {
+  // State to track the open FAQ item
   const [openId, setOpenId] = useState(null);
 
+  // FAQ data
   const faqData = [
     {
       id: "1",
@@ -32,6 +34,7 @@ const Frequentlyque = () => {
     },
   ];
 
+  // Function to toggle FAQ item visibility
   const toggleFaq = (id) => {
     setOpenId(openId === id ? null : id);
   };
@@ -39,27 +42,33 @@ const Frequentlyque = () => {
   return (
     <>
       <div className="relative w-full text-center py-14 overflow-hidden">
+        {/* Heading */}
         <div className="heading max-w-screen-xl mx-auto flex items-center justify-center pb-12 px-4">
           <h1 className="text-4xl capitalize font-semibold tracking-tight">
             Frequently Asked Questions
           </h1>
         </div>
+
+        {/* FAQ Wrapper */}
         <div className="FAQ-wrapper max-w-screen-xl mx-auto py-5 px-4 mt-10 flex items-center flex-col justify-between">
           <div className="FAQ-container w-full h-full flex items-center flex-col gap-8">
+            {/* FAQ Items */}
             {faqData.map((item) => (
               <motion.div
                 key={item.id}
-                className="faq-content relative w-[60%]"
+                className="faq-content relative w-[100%] md:w-[80%] lg:w-[60%]"
                 initial={{ height: "12vh" }}
                 animate={{ height: openId === item.id ? "28vh" : "12vh" }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
+                {/* FAQ Question */}
                 <motion.div
                   onClick={() => toggleFaq(item.id)}
                   whileHover={{ scale: 1 }}
                   transition={{ duration: 0.2 }}
-                  className="frq-que absolute left-0  z-[2] w-full h-[12vh] px-5 flex items-center gap-8 faq-bg rounded-xl"
+                  className="frq-que absolute left-0 z-[2] w-full h-[12vh] px-5 flex items-center gap-8 faq-bg rounded-xl"
                 >
+                  {/* Expand/Collapse Button */}
                   <motion.button
                     className="acton"
                     animate={{ rotate: openId === item.id ? 45 : 0 }}
@@ -67,18 +76,26 @@ const Frequentlyque = () => {
                   >
                     <i className="ri-add-line text-xl"></i>
                   </motion.button>
-                  <h1 className="text-xl">{item.headtext}</h1>
+
+                  {/* FAQ Question Text */}
+                  <h1 className="text-sm md:text-xl lg:text-xl">{item.headtext}</h1>
                 </motion.div>
+
+                {/* FAQ Answer */}
                 <AnimatePresence>
                   {openId === item.id && (
                     <motion.div
-                      className="frq-para absolute left-0 w-full text-start py-10 gap-5 px-20 faq-bg rounded-xl"
+                      className="frq-para absolute left-0 w-full text-start py-10 gap-5 px-5 md:px-10 lg:px-20 faq-bg rounded-xl"
                       initial={{ opacity: 0, top: "0%" }}
                       animate={{ opacity: 1, top: "30%" }}
                       exit={{ opacity: 0, top: "0%" }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <p className="text-[1.1vw] leading-tight" dangerouslySetInnerHTML={{__html: item.info}}></p>
+                      {/* Display answer text */}
+                      <p
+                        className="text-[2.5vw] md:text-[2vw] lg:text-[1.1vw] leading-tight"
+                        dangerouslySetInnerHTML={{ __html: item.info }}
+                      ></p>
                     </motion.div>
                   )}
                 </AnimatePresence>
